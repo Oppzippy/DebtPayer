@@ -10,8 +10,8 @@ if len(sys.argv) < 3:
 	print('Args: wclreport totalgold')
 	sys.exit()
 
-	
-	
+
+
 id = sys.argv[1]
 total_currency = float(sys.argv[2])
 
