@@ -1,4 +1,5 @@
 import sqlite3
+import math
 
 class WCLPayoutDistributor:
 	def __init__(self, config, json):
@@ -71,7 +72,7 @@ class WCLPayoutDistributor:
 		
 		payout = {}
 		for row in rows:
-			payout[row[0]] = row[1] * share_price
+			payout[row[0]] = math.floor(row[1] * share_price)
 		
 		return payout
 	

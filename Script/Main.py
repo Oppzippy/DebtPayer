@@ -1,7 +1,6 @@
 import requests
 import yaml
 import sys
-import math
 from WCLPayoutDistributor import WCLPayoutDistributor
 
 if len(sys.argv) < 3:
@@ -18,6 +17,6 @@ with open('config.yaml', 'r', encoding="utf-8") as f:
 
 	payout = payout_distributer.get_payout(total_currency)
 
-	output = "\n".join("{},{}".format(k, math.floor(v)) for k, v in payout.items())
+	output = "\n".join("{},{}".format(k, v) for k, v in payout.items())
 
 	print(output)
