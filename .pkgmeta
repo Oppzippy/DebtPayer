@@ -1,7 +1,0 @@
-package-as: DebtPayer
-
-externals:
-    Libs/LibCopyPaste: https://github.com/Oppzippy/LibCopyPaste.git
-
-ignore:
-  - Script
