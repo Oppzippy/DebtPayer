@@ -2,7 +2,7 @@
 ## Title: DebtPayer
 ## Notes: Pays your debts
 ## Author: Oppzippy
-## Version: 1.0
+## Version: @project-version@
 
 libs.xml
 EventRegister.lua
