@@ -1,6 +1,6 @@
 import sqlite3
 
-class WCLPayoutDistributer:
+class WCLPayoutDistributor:
 	def __init__(self, config, json):
 		self.connection = sqlite3.connect(':memory:')
 		self.cursor = self.connection.cursor()
@@ -38,7 +38,7 @@ class WCLPayoutDistributer:
 	
 	def populate_boss_kills(self, json):
 		for fight in json['fights']:
-			if fight['boss'] != 0 and fight['kill']:
+			if fight.get('boss') != 0 and fight.get('kill'):
 				self.cursor.execute('INSERT INTO boss_kills (fight, boss) VALUES (:fight, :boss)', {'fight': fight['id'], 'boss': fight['boss']})
 				
 	# End init, begin aggregation
