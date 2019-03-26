@@ -13,6 +13,8 @@ ignore = {
 }
 
 globals = {
+	"DebtPayer",
+	"LibStub",
 	"UpdateOnBarHighlightMarksBySpell",
 	"ERR_OUT_OF_CHI",
 	"DH_HAVOC_CORE_ABILITY_2",
