@@ -1,0 +1,12 @@
+## Interface: 80100
+## Title: DebtPayer
+## Notes: Pays your debts
+## Author: Oppzippy
+## Version: 1.0
+
+libs.xml
+EventRegister.lua
+DebtPayer.lua
+DebtFrame.lua
+Main.lua
+UserInput.lua

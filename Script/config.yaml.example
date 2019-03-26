@@ -1,0 +1,11 @@
+api_key: key
+
+blacklist:
+    - Carry1
+    - Carry2
+    - Carry3
+
+bosses:
+    1234: 1
+    1235: 1
+    1236: 2
