@@ -184,4 +184,5 @@ class TestWCLPayoutDistributor(unittest.TestCase):
 		payout = dist.get_payout(1000000)
 		self.assertEqual(expected_result, payout)
 
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()

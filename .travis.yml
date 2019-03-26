@@ -1,0 +1,14 @@
+language: minimal
+dist: xenial
+
+addons:
+  apt:
+    packages:
+      - lua-check
+
+before_script:
+  - pip install -r requirements.txt
+
+script:
+  - luacheck Addon -q
+  - cd Script && python3 -m unittest discover -s test && cd ..
