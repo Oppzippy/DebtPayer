@@ -1,5 +1,3 @@
-# Requires requests and pyyaml
-
 import requests
 import yaml
 import sys
