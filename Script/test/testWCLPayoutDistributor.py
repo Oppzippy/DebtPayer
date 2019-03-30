@@ -173,8 +173,20 @@ expected_result = {
 	'Booster4': 116279
 }
 
-f = open('config.test.yaml', 'r', encoding="utf-8")
-config = yaml.safe_load(f)
+config = {
+	'blacklist': [
+		'Carry1',
+		'Carry2',
+		'Carry3'
+	],
+	'bosses': {
+		1: 1,
+		2: 1,
+		3: 2,
+		4: 5,
+		5: 2.5
+	}
+}
 
 
 class TestWCLPayoutDistributor(unittest.TestCase):
