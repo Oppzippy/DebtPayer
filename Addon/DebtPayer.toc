@@ -5,6 +5,7 @@
 ## Version: @project-version@
 ## OptionalDeps: LibCopyPaste-1.0
 
+libs.xml
 EventRegister.lua
 DebtPayer.lua
 DebtFrame.lua

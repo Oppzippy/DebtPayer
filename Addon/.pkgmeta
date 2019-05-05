@@ -1,0 +1,9 @@
+package-as: DebtPayer
+
+externals:
+  Libs/LibCopyPaste-1.0:
+    url: https://github.com/Oppzippy/LibCopyPaste.git
+    tag: latest
+
+ignore:
+  - .luacheckrc
